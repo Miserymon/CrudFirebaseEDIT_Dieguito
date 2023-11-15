@@ -100,8 +100,8 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(holder.nombre.getContext());
                 builder.setTitle("ESTAS SEGURITO? Q.Q");
-                builder.setMessage("eliminau u.u");
-                builder.setPositiveButton("Eliminado", new DialogInterface.OnClickListener() {
+                builder.setMessage("no me elimines pipipi....");
+                builder.setPositiveButton("EliminaRRRR", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         FirebaseDatabase.getInstance().getReference().child("Programación Android")
@@ -111,7 +111,7 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
                 builder.setNegativeButton("Cancelarrr", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(holder.nombre.getContext(), "Cancelarrr", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(holder.nombre.getContext(), "gracias jijiij miau", Toast.LENGTH_SHORT).show();
                     }
                 });
                 builder.show();
